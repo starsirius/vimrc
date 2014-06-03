@@ -4,4 +4,3 @@ if has("gui_macvim")
    " map Cmd-T to the CommandT plugin
    map <D-t> :CommandT<CR>
 endif
-
