@@ -1,19 +1,24 @@
-vgod's vimrc
+starsirius' vimrc
 ============
-Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+This is a forked version of [vgod's vimrc](https://github.com/vgod/vimrc),
+with personal preference changes.
 
-Fork me on GITHUB  https://github.com/vgod/vimrc.
+Author: Chung-Yi Chi <cychi1210@gmail.com>
+
+Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+
+Fork me on GITHUB  https://github.com/starsirius/vimrc.
 
 ONE-STEP INSTALL
 ----------------
 
 Use curl (for Mac OS X):
 
-     curl -o - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
+     curl -o - -L https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
 
 or wget (for most UNIX platforms):
 
-     wget -O - https://raw.github.com/vgod/vimrc/master/auto-install.sh | sh
+     wget -O - https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
 
 
 MANUALLY INSTALL
@@ -21,7 +26,7 @@ MANUALLY INSTALL
 
 1. Check out from github
 
-        git clone git://github.com/vgod/vimrc.git ~/.vim
+        git clone git://github.com/starsirius/vimrc.git ~/.vim
         cd ~/.vim
         git submodule update --init
 
@@ -42,7 +47,7 @@ MANUALLY INSTALL ON WINDOWS
 
         cd C:\Program Files\Vim   (or your installed path to Vim)
         rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-        git clone git://github.com/vgod/vimrc.git vimfiles
+        git clone git://github.com/starsirius/vimrc.git vimfiles
         git submodule update --init
 
 2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.

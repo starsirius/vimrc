@@ -1,8 +1,10 @@
-" vgod's vimrc
-" Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
-" Fork me on GITHUB  https://github.com/vgod/vimrc
+" starsirius' vimrc
+" This is a forked version of vgod's vimrc.
+" Author: Chung-Yi Chi <cychi1210@gmail.com>
+" Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
+" Fork me on GITHUB  https://github.com/starsirius/vimrc
 
-" read https://github.com/vgod/vimrc/blob/master/README.md for more info
+" read https://github.com/starsirius/vimrc/blob/master/README.md for more info
 
 
 " For pathogen.vim: auto load all plugins in .vim/bundle
