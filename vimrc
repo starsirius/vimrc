@@ -339,3 +339,9 @@ let g:gitgutter_enabled = 1
 
 " Python specific settings
 autocmd FileType python setlocal shiftwidth=4 softtabstop=4
+
+" --- NERDTree
+" map Ctrl+n Ctrl+n to toggle NERDTree
+map <C-n><C-n> :NERDTreeToggle<CR>
+" close vim if the only window left open is a NERDTree
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
