@@ -347,3 +347,7 @@ autocmd FileType python setlocal shiftwidth=4 softtabstop=4
 map <C-n><C-n> :NERDTreeToggle<CR>
 " close vim if the only window left open is a NERDTree
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTreeType") && b:NERDTreeType == "primary") | q | endif
+
+" --- CtrlP
+" invoke CtrlP with Ctrl+p Ctrl+p
+let g:ctrlp_map = '<c-p><c-p>'
