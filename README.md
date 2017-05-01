@@ -1,13 +1,7 @@
 starsirius' vimrc
 ============
 This is a forked version of [vgod's vimrc](https://github.com/vgod/vimrc),
-with personal preference changes.
-
-Author: Chung-Yi Chi <cychi1210@gmail.com>
-
-Original Author: Tsung-Hsiang (Sean) Chang <vgod@vgod.tw>
-
-Fork me on GITHUB  https://github.com/starsirius/vimrc.
+with personal preferential changes.
 
 ONE-STEP INSTALL
 ----------------
@@ -64,6 +58,14 @@ which can be upgraded with `git pull`. For example, to upgrade Command-T
 
      cd ~/.vim/bundle/command-t
      git pull
+
+To upgrade all submodules, for git 1.8.2 or above,
+
+     git submodule update --remote
+
+or for git 1.6.1 or above,
+
+     git submodule foreach git pull origin master
 
 To install a new plugin as a git submoudle, type the following commands.
 
