@@ -1,92 +1,89 @@
 starsirius' vimrc
 ============
-This is a forked version of [vgod's vimrc](https://github.com/vgod/vimrc),
-with personal preferential changes.
+This is a fork of [vgod's vimrc](https://github.com/vgod/vimrc), with personal
+preferential changes.
 
-ONE-STEP INSTALL
+One-step Install
 ----------------
 
 Use curl (for Mac OS X):
 
-     curl -o - -L https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
+    curl -o - -L https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
 
 or wget (for most UNIX platforms):
 
-     wget -O - https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
+    wget -O - https://raw.github.com/starsirius/vimrc/master/auto-install.sh | sh
 
 
-MANUALLY INSTALL
+Manual Install
 ----------------
 
 1. Check out from github
 
-        git clone git://github.com/starsirius/vimrc.git ~/.vim
-        cd ~/.vim
-        git submodule update --init
+       git clone git://github.com/starsirius/vimrc.git ~/.vim
+       cd ~/.vim
+       git submodule update --init
 
 2. Install ~/.vimrc and ~/.gvimrc
 
-        ./install-vimrc.sh
+       ./install-vimrc.sh
 
 3. (Optional, if you want Command-T) Compile the Command-T plugin
 
-        cd .vim/bundle/command-t/ruby/command-t
-        ruby extconf.rb
-        make
+       cd .vim/bundle/command-t/ruby/command-t
+       ruby extconf.rb
+       make
 
-MANUALLY INSTALL ON WINDOWS
+Manual Install on Windows
 ---------------------------
 
 1. Check out from github
 
-        cd C:\Program Files\Vim   (or your installed path to Vim)
-        rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-        git clone git://github.com/starsirius/vimrc.git vimfiles
-        git submodule update --init
+       cd C:\Program Files\Vim   (or your installed path to Vim)
+       rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
+       git clone git://github.com/starsirius/vimrc.git vimfiles
+       git submodule update --init
 
 2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.
 
-        source $VIM/vimfiles/vimrc
+       source $VIM/vimfiles/vimrc
 
-
-
-INSTALL & UPGRADE PLUGIN BUNDLES
+Install & Upgrade Plugin Bundles
 --------------------------------
 
 All plugins (except vim-latex) were checked out as git submodules,
 which can be upgraded with `git pull`. For example, to upgrade Command-T
 
-     cd ~/.vim/bundle/command-t
-     git pull
+    cd ~/.vim/bundle/command-t
+    git pull
 
 To upgrade all submodules, for git 1.8.2 or above,
 
-     git submodule update --remote
+    git submodule update --remote
 
 or for git 1.6.1 or above,
 
-     git submodule foreach git pull origin master
+    git submodule foreach git pull origin master
 
 To install a new plugin as a git submoudle, type the following commands.
 
-     cd ~/.vim
-     git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
+    cd ~/.vim
+    git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
 
-HOW TO USE
+How to Use
 ----------
 
 see the "USEFUL SHORTCUTS" section in vimrc to learn my shortcuts.
 
-PLUGINS
+Plugins
 -------
 
-* [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): Pathogen let us install a plugin as a bundle in ~/.vim/bundle seprately.
+* [Pathogen](http://www.vim.org/scripts/script.php?script_id=2332): Pathogen lets us install a plugin as a bundle in ~/.vim/bundle separately.
 
-* [Nerd Tree](http://www.vim.org/scripts/script.php?script_id=1658): A tree explorer plugin for navigating the filesystem.
+* [NERDTree](http://www.vim.org/scripts/script.php?script_id=1658): A tree explorer plugin for navigating the filesystem.
 
-  Useful commands:
-    `:Bookmark [name]` - bookmark any directory as name
-    `:NERDTree [name]` - open the bookmark [name] in Nerd Tree
+  + `:Bookmark [name]` - bookmark any directory as `name`
+  + `:NERDTree [name]` - open the bookmark `name` in NERDTree
 
 * [AutoClose](http://www.vim.org/scripts/script.php?script_id=1849):  Inserts matching bracket, paren, brace or quote.
 
@@ -159,7 +156,6 @@ Other good references
 * http://amix.dk/vim/vimrc.html
 * http://spf13.com/post/perfect-vimrc-vim-config-file
 
-
 Vim Visual Cheat Sheet
 ----------------------
 
@@ -175,9 +171,7 @@ Welcome to download and learn Vim with it.
 
 These Vim Visual Cheat Sheets are released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
 
-
 License
 -------
 
 This vimrc project is released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
-
