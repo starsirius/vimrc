@@ -171,7 +171,14 @@ Welcome to download and learn Vim with it.
 
 These Vim Visual Cheat Sheets are released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
 
+FAQ
+---
+* What is the ~/.vim directory?
+  The ~/.vim directory is used by Vim to search for scripts. Take a look at [`runtimepath`][runtimepath] or `:help vimfiles` and learn the default layout of the directory.
+
 License
 -------
 
 This vimrc project is released under [Creative Commons Attribution-ShareAlike 3.0 Unported License](http://creativecommons.org/licenses/by-sa/3.0/deed.en_US).
+
+[runtimepath]: http://vimdoc.sourceforge.net/htmldoc/options.html#'runtimepath'
