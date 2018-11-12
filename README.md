@@ -89,8 +89,6 @@ Plugins
 
 * [vim-surround](https://github.com/tpope/vim-surround/blob/master/doc/surround.txt): deal with pairs of surroundings.
 
-* [matchit](http://www.vim.org/scripts/script.php?script_id=39): extended % matching for HTML, LaTeX, and many other languages.
-
 * [xmledit](http://www.vim.org/scripts/script.php?script_id=301): XML/HTML tags will be completed automatically.
 
 * [Command-T](https://github.com/wincent/Command-T): open and navigate between files with `cmd-t`.
@@ -99,29 +97,19 @@ Plugins
 
 * [snipMate](http://www.vim.org/scripts/script.php?script_id=2540): TextMate-style snippets for Vim
 
+  + Requires [addon-mw-utils](https://github.com/marcweber/vim-addon-mw-utils) and [tlib](https://github.com/tomtom/tlib_vim).
+
   `:help snipMate` to see more info.
 
 * [YankRing](http://www.vim.org/scripts/script.php?script_id=1234): Maintains a history of previous yanks, changes and deletes
 
   `:help yankring` to see more info.
 
-* [VisIncr](http://www.vim.org/scripts/script.php?script_id=670): Produce increasing/decreasing columns of numbers, dates, or daynames.
-
-* [Cute Error Marker](http://www.vim.org/scripts/script.php?script_id=2653): showing error and warning icons on line.
-
-   MacVim users need to enable "Use experimental renderer" to see
-   graphical icons.
-
 * [EasyMotion](https://github.com/Lokaltog/vim-easymotion): An easy way to jump to a word.
 
   Useful commands:
     `,,w` forward EasyMotion
     `,,b` backward EasyMotion
-
-* [TagBar](http://majutsushi.github.com/tagbar/): browsing the tags of source files ordered by classes.
-
-  Useful commands:
-    `F7` toggles the TagBar
 
 * [Indent Motion](https://github.com/vim-scripts/indent-motion): Vim motions to the start and end of the current indentation-delimited block
 
@@ -145,7 +133,6 @@ Plugins
 Language specific supports
 --------------------------
 
-* Latex: Read `:help latex-suite.txt`
 * Restructured Text: `ctrl-u 1~5` inserts Part/Chapter/Section headers
 * HTML, Javascript, CoffeeScript, Python, CSS, C, C++, Java: use `TAB` to do omni-completion.
 * HTML/XML: End tags are automatically completed after typing a begin tag. (Typing > twice pushes the end tag to a new line.)
