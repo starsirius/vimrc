@@ -1,4 +1,4 @@
-starsirius' vimrc
+Vimrc
 ============
 This is a fork of [vgod's vimrc](https://github.com/vgod/vimrc), with personal
 preferential changes.
@@ -16,7 +16,7 @@ or wget (for most UNIX platforms):
 
 
 Manual Install
-----------------
+--------------
 
 1. Check out from github
 
@@ -34,24 +34,10 @@ Manual Install
        ruby extconf.rb
        make
 
-Manual Install on Windows
----------------------------
-
-1. Check out from github
-
-       cd C:\Program Files\Vim   (or your installed path to Vim)
-       rmdir /s vimfiles         (This deletes your old vim configurations. If you want to keep it, use move instead of rmdir.)
-       git clone git://github.com/starsirius/vimrc.git vimfiles
-       git submodule update --init
-
-2. Install vimrc. Add the following line at the end of C:\Program Files\Vim\vimrc.
-
-       source $VIM/vimfiles/vimrc
-
 Install & Upgrade Plugin Bundles
 --------------------------------
 
-All plugins (except vim-latex) were checked out as git submodules,
+All plugins were checked out as git submodules,
 which can be upgraded with `git pull`. For example, to upgrade Command-T
 
     cd ~/.vim/bundle/command-t
@@ -69,6 +55,10 @@ To install a new plugin as a git submoudle, type the following commands.
 
     cd ~/.vim
     git submodule add [GIT-REPOSITORY-URL] bundle/[PLUGIN-NAME]
+
+To ignore untracked content in a submodule, add the property under the submodule:
+
+    ignore = untracked
 
 How to Use
 ----------
