@@ -94,3 +94,7 @@
 	path = bundle/yankring
 	url = https://github.com/vim-scripts/YankRing.vim
         ignore = untracked
+[submodule "bundle/ale"]
+	path = bundle/ale
+	url = https://github.com/w0rp/ale.git
+        ignore = untracked
