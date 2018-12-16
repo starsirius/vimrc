@@ -120,6 +120,8 @@ Plugins
 
 * [CtrlP](https://github.com/ctrlpvim/ctrlp.vim): Fuzzy file, buffer, mru, tag, etc finder.
 
+* [ale](https://github.com/w0rp/ale): Asynchronous Lint Engine, a LSP client for linting (Vim 8+).
+
 Language specific supports
 --------------------------
 
