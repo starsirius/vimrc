@@ -5,15 +5,8 @@
 " This is a fork of vgod's vimrc. Read the Github repo for more info.
 
 
-" For pathogen.vim: auto load all plugins in .vim/bundle
-
-let g:pathogen_disabled = []
-if !has('gui_running')
-  call add(g:pathogen_disabled, 'powerline')
-endif
-
-call pathogen#runtime_append_all_bundles()
-call pathogen#helptags()
+" pathogen.vim: auto load all plugins in ~/.vim/bundle
+execute pathogen#infect()
 
 " General Settings
 
