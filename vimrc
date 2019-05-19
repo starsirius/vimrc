@@ -325,7 +325,7 @@ let g:tagbar_autofocus = 1
 let g:snipMateAllowMatchingDot = 0
 
 " --- coffee-script
-au BufWritePost *.coffee silent CoffeeMake! -b | cwindow | redraw! " recompile coffee scripts on write
+au BufWritePost *.coffee silent make! -b | cwindow | redraw! " recompile coffee scripts on write
 
 " --- vim-gitgutter
 let g:gitgutter_enabled = 1
